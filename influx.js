@@ -19,10 +19,9 @@ const client = new Influx.InfluxDB({
     {
       measurement: 'wait_time',
       fields: {
-        active: Influx.FieldType.BOOLEAN,
-        wait_time: Influx.FieldType.INTEGER,
+        value: Influx.FieldType.INTEGER,
       },
-      tags: ['park_name', 'ride_name'],
+      tags: ['active', 'park_name', 'ride_name'],
     },
   ],
 });
