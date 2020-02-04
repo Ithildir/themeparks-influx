@@ -1,8 +1,7 @@
 FROM node:12
-
-WORKDIR /usr/src/app
-
 USER node
+
+WORKDIR /home/node
 
 COPY package*.json ./
 
