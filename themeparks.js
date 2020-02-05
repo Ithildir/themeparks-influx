@@ -1,6 +1,12 @@
 const Themeparks = require('themeparks');
 
-const { CACHE_DB, PARKS } = process.env;
+const {
+  CACHE_DB,
+  PARKS = [
+    'DisneylandResortCaliforniaAdventure',
+    'DisneylandResortMagicKingdom',
+  ].join(),
+} = process.env;
 
 if (CACHE_DB) {
   Themeparks.Settings.Cache = CACHE_DB;
