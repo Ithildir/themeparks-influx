@@ -46,7 +46,7 @@ async function saveWaitTimes() {
 
     await influx.writePoints(points);
 
-    console.log(`Correctly saved ${points.length} wait times to InfluxDB`);
+    console.log(`Correctly saved ${points.length} wait times`);
   } catch (err) {
     console.error(err);
   }
